@@ -1,5 +1,5 @@
 // Fetch products from backend and display them
-fetch('http://localhost:5000/products')
+fetch('https://mollis-backend.onrender.com/products')
   .then(res => res.json())
   .then(products => {
     const shopDiv = document.querySelector('.shop-products');
@@ -25,11 +25,12 @@ function preorder(productId) {
   const name = prompt("Enter your name:");
   const email = prompt("Enter your email:");
 
-  fetch('http://localhost:5000/preorder', {
+  fetch('https://mollis-backend.onrender.com/preorder', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, email, productId })
-  })
+})
+
   .then(res => res.json())
   .then(data => alert(data.message))
   .catch(err => alert("Error placing pre-order"));
