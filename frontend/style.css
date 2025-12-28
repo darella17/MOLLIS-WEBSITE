@@ -318,5 +318,54 @@ footer {
     }
 }
 
+/* Admin Panel Styles */
+#add-product {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#add-product h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b0082; /* Mollis purple */
+}
+
+#add-product label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#add-product input,
+#add-product select,
+#add-product button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+#add-product button {
+    margin-top: 15px;
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-product button:hover {
+    background-color: #6a00b8;
+}
+
+#success-msg {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
 
 
