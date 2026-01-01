@@ -393,55 +393,23 @@ nav a:hover {
   color: #9b59b6; /* purple hover */
 }
 
-/* Hero Section */
+/* Hero section – big background logo */
 .hero {
-  position: relative;
+    
   width: 100vw;
-  height: 100vh;            /* full screen on desktop */
-  background-image: url('images/banner1.jpg'); /* your logo */
+  height: 100vh;
+  background-image: url('images/banner1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  color: black;
-  padding: 0;
 }
-
-/* Hero Text */
-.hero-text {
-  position: absolute;
-  top: 70%;
-  left: 5%;
-  transform: translateY(-50%);
-  text-align: left;
-  color: white;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-/* Mobile adjustments */
+/* Mobile fix */
 @media screen and (max-width: 600px) {
   .hero {
-    height: 80vh;             /* slightly smaller than full screen */
-  }
-
-  .hero-text {
-    top: 65%;                 /* move text down a bit */
-    left: 5%;
-    width: 90%;               /* don’t overflow screen */
-    font-size: 1.2em;         /* smaller text on phones */
-  }
-
-  .hero h2 {
-    font-size: 1.5em;
-  }
-
-  .hero p {
-    font-size: 1em;
+    height: 80vh;
+    background-position: center;
   }
 }
+
+
 
