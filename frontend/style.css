@@ -368,4 +368,50 @@ footer {
     font-weight: bold;
 }
 
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #000;
+  color: #fff;
+}
+
+.brand-logo {
+  height: 60px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #9b59b6; /* purple hover */
+}
+
+/* Hero Section */
+.hero {
+ position: relative;       /* important for absolute positioning inside */
+  width: 100vw;
+  height: 100vh;            /* full screen */
+  background-image: url('images/banner1.jpg'); /* your logo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0); /* optional for any text */
+  padding: 0;   /* remove previous padding */
+}
+.hero-text {
+  position: absolute;
+  top: 50%;       /* move it halfway down the hero section */
+  left: 5%;       /* close to left edge */
+  transform: translateY(-50%);  /* centers it vertically at top */
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
 
