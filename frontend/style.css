@@ -395,23 +395,53 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
- position: relative;       /* important for absolute positioning inside */
+  position: relative;
   width: 100vw;
-  height: 100vh;            /* full screen */
+  height: 100vh;            /* full screen on desktop */
   background-image: url('images/banner1.jpg'); /* your logo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: rgb(0, 0, 0); /* optional for any text */
-  padding: 0;   /* remove previous padding */
-}
-.hero-text {
-  position: absolute;
-  top: 50%;       /* move it halfway down the hero section */
-  left: 5%;       /* close to left edge */
-  transform: translateY(-50%);  /* centers it vertically at top */
-  text-align: left;
-  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  padding: 0;
 }
 
+/* Hero Text */
+.hero-text {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 80vh;             /* slightly smaller than full screen */
+  }
+
+  .hero-text {
+    top: 65%;                 /* move text down a bit */
+    left: 5%;
+    width: 90%;               /* don’t overflow screen */
+    font-size: 1.2em;         /* smaller text on phones */
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
 
